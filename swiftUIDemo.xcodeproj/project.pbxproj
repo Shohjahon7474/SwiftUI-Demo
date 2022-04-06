@@ -16,7 +16,6 @@
 		8440ADBC27F843C80079B402 /* swiftUIDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440ADBB27F843C80079B402 /* swiftUIDemoTests.swift */; };
 		8440ADC627F843C80079B402 /* swiftUIDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440ADC527F843C80079B402 /* swiftUIDemoUITests.swift */; };
 		8440ADC827F843C80079B402 /* swiftUIDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440ADC727F843C80079B402 /* swiftUIDemoUITestsLaunchTests.swift */; };
-		8440ADD627F8461A0079B402 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440ADD527F8461A0079B402 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +48,6 @@
 		8440ADC127F843C80079B402 /* swiftUIDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftUIDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8440ADC527F843C80079B402 /* swiftUIDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIDemoUITests.swift; sourceTree = "<group>"; };
 		8440ADC727F843C80079B402 /* swiftUIDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8440ADD527F8461A0079B402 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +134,6 @@
 		8440ADD427F845F10079B402 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				8440ADD527F8461A0079B402 /* HomeScreen.swift */,
 				8403F6F827FACBDC005E9D5D /* DetailScreen.swift */,
 			);
 			path = Screens;
@@ -284,7 +281,6 @@
 			files = (
 				8403F6F927FACBDD005E9D5D /* DetailScreen.swift in Sources */,
 				8440ADB227F843C80079B402 /* swiftUIDemo.xcdatamodeld in Sources */,
-				8440ADD627F8461A0079B402 /* HomeScreen.swift in Sources */,
 				8440ADAF27F843C80079B402 /* Persistence.swift in Sources */,
 				8440ADA627F843C50079B402 /* swiftUIDemoApp.swift in Sources */,
 			);

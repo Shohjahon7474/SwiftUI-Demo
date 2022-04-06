@@ -8,25 +8,30 @@
 import SwiftUI
 import MapKit
 
-struct PinItem : Identifiable{
-    
-    let id = UUID()
-    let coordinate:CLLocationCoordinate2D
-}
-
+extension UIScreen{
+        static let width = UIScreen.main.bounds.size.width
+        static let height = UIScreen.main.bounds.size.height
+        static let size = UIScreen.main.bounds.size
+    }
 struct DetailScreen: View {
-    
-    @State var region = MKCoordinateRegion(center: .init(latitude: 37.334722, longitude: -122.008889),latitudinalMeters: 300,longitudinalMeters: 300)
-    @State var pin = PinItem(coordinate: .init(latitude: 37.334722, longitude: -122.008889))
-    // Ayrim Sababga kura O'zimni Locatsiyamni beraolmayman
-                             
+    var columns: [GridItem] = Array(repeating: .init(.fixed(160)), count: 2)
     var body: some View {
-        Map(coordinateRegion: $region,
-            showsUserLocation: true,
-            userTrackingMode: nil,
-            annotationItems: [pin]
-        ){ item in
-            MapMarker(coordinate: item.coordinate)
+        ScrollView{
+            LazyVGrid(columns: columns, spacing: 8){
+                ForEach((0...20),id: \.self){ index in
+            
+                    VStack{
+                        
+                    Image("supreme").resizable()
+                            .frame(width: 160, height: 80)
+                        Spacer(minLength: 0)
+                        
+                    Text("Title \(index)").frame(width: 160, height: 40.0).background(Color.gray)
+                    
+                    }.cornerRadius(12)
+                        
+                }
+            }
         }
     }
 }
